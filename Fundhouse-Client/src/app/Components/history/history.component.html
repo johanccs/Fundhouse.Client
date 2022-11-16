@@ -1,0 +1,17 @@
+
+<div class="my-5 mx-5">
+    <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Timestamp</th>
+            <th scope="col">Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let hist of history">
+            <td>{{hist.timeStamp | date: 'yyyy-MM-dd hh:mm:ss'}}</td>
+            <td>{{hist.rate}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
