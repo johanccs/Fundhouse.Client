@@ -1,5 +1,10 @@
-button {
-    margin-left: -20px;
+.button-location {
+    margin-left: -22px;
+    margin-top:1px;
+}
+
+.button-size {
+    height: 38px;
 }
 
 .input-middle {
