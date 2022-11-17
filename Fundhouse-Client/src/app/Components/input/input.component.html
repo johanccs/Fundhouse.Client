@@ -3,32 +3,34 @@
         <div class="input-group mb-3 mx-3">
             <span class="input-group-text">?</span>
             <input type="number" 
+                   name="amount"
+                   [(ngModel)]="amount"
                    class="form-control form-control-sm" 
                    placeholder="Amount">
           </div>
     </div>
     <div class="col-3">
-        <select class="form-select" placeholder="Base currency">
-            <option selected>Select Base currency</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+        <select class="form-select" [(ngModel)]="selectedBaseCurr">
+            <option *ngFor="let curr of basecurrs">
+                {{curr.currencyId}}
+            </option>
         </select>
     </div>
     <div class="col-1">
-        <button type="button" class="btn btn-light btn-sm">
-           <img src="assets/images/46246.png" style="width: 16px;height:16px">
-        </button>
+        <div class="button-location">
+            <button type="button" class="btn btn-light btn-sm button-size" (click)="swapCurrencies()">
+               <img src="assets/images/46246.png" style="width: 16px;height:16px">
+            </button>
+        </div>
     </div>
-    <div class="col-4" style="margin-left: -60px">
-        <select class="form-select" placeholder="Exchange rate currency">
-            <option selected>Select Exchange rate currency</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+    <div class="col-3" style="margin-left: -60px">
+        <select class="form-select" [(ngModel)]="selectedExchangeCurr">
+            <option *ngFor="let cur of exchangecurrs">
+                {{cur.currencyId}}
+            </option>
         </select>
     </div>
-    <div class="col">
-        <button class="btn btn-primary">Convert</button>
+    <div class="col-1">
+        <button class="btn btn-primary button-location" (click)="convert()">Convert</button>
     </div>
 </div>

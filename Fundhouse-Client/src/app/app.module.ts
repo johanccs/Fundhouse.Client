@@ -8,6 +8,8 @@ import { InputComponent } from './Components/input/input.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OutputComponent } from './Components/output/output.component';
 import { HistoryComponent } from './Components/history/history.component'
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HistoryComponent } from './Components/history/history.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
