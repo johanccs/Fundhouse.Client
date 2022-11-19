@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { QuoteOutput } from 'src/app/Models/quote/quoteOutput';
+
 
 @Component({
   selector: 'app-output',
