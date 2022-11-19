@@ -11,3 +11,9 @@
     margin: 0 auto;
     margin-left: 20px;
 }
+
+.err-msg {
+    color: darkorange;
+    margin-top: -20px;
+    font-size: 18px;
+}

@@ -31,6 +31,14 @@
         </select>
     </div>
     <div class="col-1">
-        <button class="btn btn-primary button-location" (click)="convert()">Convert</button>
+        <button class="btn btn-primary button-location" 
+                data-bs-toggle="tooltip" 
+                data-bs-placement="top" 
+                data-bs-title="Tooltip on top"
+                (click)="convert()">{{buttonCaption}}</button>
     </div>
+</div>
+
+<div class="row err-msg">
+     <label *ngIf="displayErr" class="mx-5">{{errMsg}}</label>
 </div>

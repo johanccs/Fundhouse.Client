@@ -1,5 +1,5 @@
 
-<div class="my-5 mx-5">
+<div class="my-3 mx-5">
     <table class="table">
         <thead class="thead-light">
           <tr>
@@ -9,7 +9,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let hist of history">
-            <td>{{hist.timeStamp | date: 'yyyy-MM-dd hh:mm:ss'}}</td>
+            <td>{{hist.timestamp | date: 'yyyy-MM-dd hh:mm:ss'}}</td>
             <td>{{hist.rate}}</td>
           </tr>
         </tbody>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IHist } from '../../Models/history/IHist';
 
 @Component({
@@ -10,17 +10,18 @@ export class HistoryComponent implements OnInit {
 
   constructor() { }
 
-  history: IHist[] = [];
+  @Input() history: IHist[] = [];
 
   ngOnInit(): void
   {
-    this.history = [
-      { timeStamp: new Date, rate: 0.055 },
-      { timeStamp: new Date, rate: 0.055 },
-      { timeStamp: new Date, rate: 0.055 },
-      {timeStamp: new Date, rate: 0.055},
-    ]
+    // this.history = [
+    //   { timeStamp: new Date, rate: 0.055 },
+    //   { timeStamp: new Date, rate: 0.055 },
+    //   { timeStamp: new Date, rate: 0.055 },
+    //   {timeStamp: new Date, rate: 0.055},
+    // ]
 
+   
   }
 
 }

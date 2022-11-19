@@ -1,8 +1,13 @@
 <div class="container">
   <div class="card card-size">
     <app-header></app-header>
-    <app-input></app-input>
-    <app-output></app-output>
-    <app-history></app-history>
+    <app-input 
+        (quoteOutput)="receiveOutputFromChild($event)" 
+        (history)="receiveHistoryFromChild($event)"></app-input>
+    <app-output class="mt-4"
+     [baseAmt]="baseAmt"
+     [quoteAmt]="quoteAmt"
+     ></app-output>
+    <app-history [history]="history"></app-history>
   </div>
 </div>
