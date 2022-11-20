@@ -1,4 +1,4 @@
 export interface IHist{
-    timeStamp: Date;
+    timestamp: Date;
     rate: number;
 }
