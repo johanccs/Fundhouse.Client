@@ -8,7 +8,7 @@ import { QuoteOutput } from './Models/quote/quoteOutput';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Fundhouse-Client';
+  title = 'Fundhouse Client';
   internalQuoteOutput: QuoteOutput;
   baseAmt: number = 0;
   quoteAmt: number = 0;

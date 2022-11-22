@@ -14,14 +14,6 @@ export class HistoryComponent implements OnInit {
 
   ngOnInit(): void
   {
-    // this.history = [
-    //   { timeStamp: new Date, rate: 0.055 },
-    //   { timeStamp: new Date, rate: 0.055 },
-    //   { timeStamp: new Date, rate: 0.055 },
-    //   {timeStamp: new Date, rate: 0.055},
-    // ]
-
-   
   }
 
 }
