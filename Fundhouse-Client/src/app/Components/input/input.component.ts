@@ -17,7 +17,7 @@ export class InputComponent implements OnInit {
   exchangecurrs: GetCurrency[] = [];
   selectedBaseCurr: string;
   selectedExchangeCurr: string;
-  amount: number = 100;
+  amount: number = 1;
   buttonCaption = "Convert";
   displayErr = false;
   errMsg = "";

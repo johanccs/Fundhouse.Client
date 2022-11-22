@@ -3,14 +3,15 @@
         <div class="input-group mb-3 mx-3">
             <span class="input-group-text">?</span>
             <input type="number" 
+                   id='amount'
                    name="amount"
                    [(ngModel)]="amount"
                    class="form-control form-control-sm" 
-                   placeholder="Amount">
+                   placeholder="Amount" />
           </div>
     </div>
     <div class="col-3">
-        <select class="form-select" [(ngModel)]="selectedBaseCurr">
+        <select class="form-select" [(ngModel)]="selectedBaseCurr" id="baseCurrency">
             <option *ngFor="let curr of basecurrs">
                 {{curr.currencyId}}
             </option>
@@ -24,7 +25,7 @@
         </div>
     </div>
     <div class="col-3" style="margin-left: -60px">
-        <select class="form-select" [(ngModel)]="selectedExchangeCurr">
+        <select class="form-select" [(ngModel)]="selectedExchangeCurr" id="exchangeCurrency">
             <option *ngFor="let cur of exchangecurrs">
                 {{cur.currencyId}}
             </option>
